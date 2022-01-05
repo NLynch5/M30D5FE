@@ -1,3 +1,4 @@
+
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
 
@@ -31,7 +32,6 @@ const App = () => {
         </Switch>
       </div>
     </Router>
-  );
 };
 
 const Home = () => {
@@ -51,5 +51,3 @@ const Profile2 = () => {
 };
 
 export default App;
-
-//this is a test 2
