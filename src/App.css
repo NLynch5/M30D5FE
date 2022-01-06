@@ -1,7 +1,24 @@
 .App {
   text-align: center;
 }
-
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+li.endpoint {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+a {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding-right: 50px;
+  border: solid;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -1,5 +1,6 @@
-
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import React from "react";
+import Profile from "./components/profile";
 import "./App.css";
 
 const App = () => {
@@ -8,14 +9,14 @@ const App = () => {
       <div className="App">
         <nav>
           <ul>
-            <li>
+            <li className="endpoint">
               <Link to="/">Home</Link>
             </li>
             <li>
               <Link to="/profile">Profile</Link>
             </li>
             <li>
-              <Link to="calculator">Carbon Calculator</Link>
+              <Link to="/calculator">Carbon Calculator</Link>
             </li>
           </ul>
         </nav>
@@ -32,6 +33,7 @@ const App = () => {
         </Switch>
       </div>
     </Router>
+  );
 };
 
 const Home = () => {
@@ -42,12 +44,8 @@ const Calculator = () => {
   return <h2>Calculator</h2>;
 };
 
-const Profile = () => {
-  return <h2>Profile</h2>;
-};
-
-const Profile2 = () => {
-  return <h2>Profile2</h2>;
-};
+// const Profile = () => {
+//   return <h2>Profile</h2>;
+// };
 
 export default App;
