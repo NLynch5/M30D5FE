@@ -2,9 +2,15 @@ const Profile = () => {
   return (
     <div class="container">
       <p>
-        <b>Name</b>
+        <b>Username</b>
       </p>
       <input type="text" />
+      <div class="container">
+        <p>
+          <b>Name</b>
+        </p>
+        <input type="text" />
+      </div>
       <div class="container">
         <p>
           <b>Email</b>

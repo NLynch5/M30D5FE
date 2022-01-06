@@ -1,24 +1,28 @@
+ul {
+  display: flex;
+  list-style-type: none;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 .App {
   text-align: center;
 }
-ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-}
+
 li.endpoint {
   display: flex;
   align-items: center;
   text-align: center;
 }
+
 a {
-  display: flex;
-  text-align: center;
+  justify-content: center;
   align-items: center;
-  padding-right: 50px;
   border: solid;
+  padding: 10px;
 }
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

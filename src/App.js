@@ -12,10 +12,12 @@ const App = () => {
             <li className="endpoint">
               <Link to="/">Home</Link>
             </li>
-            <li>
-              <Link to="/profile">Profile</Link>
+            <li className="endpoint">
+              <Link id="link" to="/profile">
+                Profile
+              </Link>
             </li>
-            <li>
+            <li className="endpoint">
               <Link to="/calculator">Carbon Calculator</Link>
             </li>
           </ul>
