@@ -15,10 +15,10 @@ const App = () => {
         <nav>
           <ul>
             <li className="endpoint">
-              <Link to="/">Home</Link>
+              <Link to="/">Login</Link>
             </li>
             <li className="endpoint">
-              <Link to="/login">Login</Link>
+              <Link to="/Home">Home</Link>
             </li>
             <li className="endpoint">
               <Link id="link" to="/profile">
@@ -34,14 +34,14 @@ const App = () => {
           <Route path="/calculator">
             <Calculator />
           </Route>
-          <Route path="/login">
-            <Login />
+          <Route path="/Home">
+            <Home />
           </Route>
           <Route path="/profile">
             <Profile />
           </Route>
           <Route path="/">
-            <Home />
+            <Login />
           </Route>
         </Switch>
       </div>
