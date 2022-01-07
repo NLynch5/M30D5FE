@@ -1,5 +1,27 @@
+ul {
+  display: flex;
+  list-style-type: none;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 .App {
   text-align: center;
+  list-style-type: none;
+}
+
+li.endpoint {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+a {
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  padding: 10px;
 }
 
 .App-logo {

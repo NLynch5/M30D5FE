@@ -1,6 +1,12 @@
-
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import React from "react";
+
+import Profile from "./components/profile";
+import Login from "./components/login";
+
 import "./App.css";
+import "./components/profile";
+import "./components/login.css";
 
 const App = () => {
   return (
@@ -8,20 +14,28 @@ const App = () => {
       <div className="App">
         <nav>
           <ul>
-            <li>
+            <li className="endpoint">
               <Link to="/">Home</Link>
             </li>
-            <li>
-              <Link to="/profile">Profile</Link>
+            <li className="endpoint">
+              <Link to="/login">Login</Link>
             </li>
-            <li>
-              <Link to="calculator">Carbon Calculator</Link>
+            <li className="endpoint">
+              <Link id="link" to="/profile">
+                Profile
+              </Link>
+            </li>
+            <li className="endpoint">
+              <Link to="/calculator">Carbon Calculator</Link>
             </li>
           </ul>
         </nav>
         <Switch>
           <Route path="/calculator">
             <Calculator />
+          </Route>
+          <Route path="/login">
+            <Login />
           </Route>
           <Route path="/profile">
             <Profile />
@@ -32,6 +46,7 @@ const App = () => {
         </Switch>
       </div>
     </Router>
+  );
 };
 
 const Home = () => {
@@ -42,12 +57,8 @@ const Calculator = () => {
   return <h2>Calculator</h2>;
 };
 
-const Profile = () => {
-  return <h2>Profile</h2>;
-};
-
-const Profile2 = () => {
-  return <h2>Profile2</h2>;
-};
+// const Profile = () => {
+//   return <h2>Profile</h2>;
+// };
 
 export default App;
