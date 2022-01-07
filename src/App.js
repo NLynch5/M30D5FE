@@ -1,7 +1,12 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import React from "react";
+
 import Profile from "./components/profile";
+import Login from "./components/login";
+
 import "./App.css";
+import "./components/profile";
+import "./components/login.css";
 
 const App = () => {
   return (
@@ -11,6 +16,9 @@ const App = () => {
           <ul>
             <li className="endpoint">
               <Link to="/">Home</Link>
+            </li>
+            <li className="endpoint">
+              <Link to="/login">Login</Link>
             </li>
             <li className="endpoint">
               <Link id="link" to="/profile">
@@ -25,6 +33,9 @@ const App = () => {
         <Switch>
           <Route path="/calculator">
             <Calculator />
+          </Route>
+          <Route path="/login">
+            <Login />
           </Route>
           <Route path="/profile">
             <Profile />
