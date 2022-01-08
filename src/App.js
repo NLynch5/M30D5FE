@@ -3,6 +3,7 @@ import React from "react";
 
 import Profile from "./components/profile";
 import Login from "./components/login";
+import Signup from "./components/signup";
 
 import "./App.css";
 import "./components/profile";
@@ -18,9 +19,6 @@ const App = () => {
               <Link to="/">Login</Link>
             </li>
             <li className="endpoint">
-              <Link to="/Home">Home</Link>
-            </li>
-            <li className="endpoint">
               <Link id="link" to="/profile">
                 Profile
               </Link>
@@ -34,8 +32,8 @@ const App = () => {
           <Route path="/calculator">
             <Calculator />
           </Route>
-          <Route path="/Home">
-            <Home />
+          <Route path="/signup">
+            <Signup />
           </Route>
           <Route path="/profile">
             <Profile />
@@ -47,10 +45,6 @@ const App = () => {
       </div>
     </Router>
   );
-};
-
-const Home = () => {
-  return <h2>Home</h2>;
 };
 
 const Calculator = () => {

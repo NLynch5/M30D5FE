@@ -11,11 +11,11 @@ ul {
   list-style-type: none;
 }
 
-li.endpoint {
+/* li.endpoint {
   display: flex;
   align-items: center;
   text-align: center;
-}
+} */
 
 a {
   justify-content: center;

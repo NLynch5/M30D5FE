@@ -1,0 +1,10 @@
+.signupButton {
+  margin-top: 20px;
+  background: #fd5411d8;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 900;
+  /* box-shadow: 6px 6px 6px #9e360dec, -6px -6px 6px #9e360dec; */
+  transition: 0.5s;
+}
