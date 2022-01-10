@@ -3,9 +3,10 @@ import React from "react";
 
 import Profile from "./components/profile";
 import Login from "./components/login";
+import Signup from "./components/signup";
 
 import "./App.css";
-import "./components/profile";
+import "./components/profile.css";
 import "./components/login.css";
 
 const App = () => {
@@ -15,10 +16,7 @@ const App = () => {
         <nav>
           <ul>
             <li className="endpoint">
-              <Link to="/">Home</Link>
-            </li>
-            <li className="endpoint">
-              <Link to="/login">Login</Link>
+              <Link to="/">Login</Link>
             </li>
             <li className="endpoint">
               <Link id="link" to="/profile">
@@ -34,23 +32,19 @@ const App = () => {
           <Route path="/calculator">
             <Calculator />
           </Route>
-          <Route path="/login">
-            <Login />
+          <Route path="/signup">
+            <Signup />
           </Route>
           <Route path="/profile">
             <Profile />
           </Route>
           <Route path="/">
-            <Home />
+            <Login />
           </Route>
         </Switch>
       </div>
     </Router>
   );
-};
-
-const Home = () => {
-  return <h2>Home</h2>;
 };
 
 const Calculator = () => {
