@@ -1,6 +1,6 @@
 const Profile = () => {
   return (
-    <div class="container">
+    <div className="container">
       <b>Name</b>
       <input type="text">name</input>
     </div>

@@ -1,29 +1,26 @@
 const Profile = () => {
   return (
-    <div class="container">
-      <p>
-        <b>Username</b>
-      </p>
-      <input type="text" />
-      <div class="container">
+    <div className="container">
+      <div class="">
         <p>
-          <b>Name</b>
+          <b>Username</b>
         </p>
         <input type="text" />
-      </div>
-      <div class="container">
-        <p>
-          <b>Email</b>
-        </p>
-        <input type="text" />
+        <div className="">
+          <p>
+            <b>Name</b>
+          </p>
+          <input type="text" />
+        </div>
+        <div className="">
+          <p>
+            <b>Email</b>
+          </p>
+          <input type="text" />
+        </div>
       </div>
     </div>
   );
 };
-/* <ul>
-                  <li>Name</li>
-                  <li>Email</li>
-                  <li>Password</li>
-              </ul> */
 
 export default Profile;
