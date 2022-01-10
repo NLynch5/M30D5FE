@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
-    <div class="container">
-      <div class="brand-logo"></div>
-      <div class="brand-title">Cora?</div>
-      <div class="inputs">
+    <div className="container">
+      <div className="brand-logo"></div>
+      <div className="brand-title">Cora?</div>
+      <div className="inputs">
         <label>EMAIL</label>
         <input type="email" placeholder="example@email.com" />
         <label>PASSWORD</label>

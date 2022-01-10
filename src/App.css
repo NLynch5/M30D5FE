@@ -3,7 +3,7 @@ ul {
   list-style-type: none;
   text-align: center;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .App {
@@ -17,12 +17,12 @@ ul {
   text-align: center;
 } */
 
-a {
+/* a {
   justify-content: center;
   align-items: center;
   border: solid;
   padding: 10px;
-}
+} */
 
 .App-logo {
   height: 40vmin;
@@ -48,13 +48,4 @@ a {
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

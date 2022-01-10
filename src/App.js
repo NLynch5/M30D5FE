@@ -6,7 +6,7 @@ import Login from "./components/login";
 import Signup from "./components/signup";
 
 import "./App.css";
-import "./components/profile";
+import "./components/profile.css";
 import "./components/login.css";
 
 const App = () => {
