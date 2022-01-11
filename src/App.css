@@ -1,4 +1,4 @@
-ul {
+/* ul {
   display: flex;
   list-style-type: none;
   text-align: center;
@@ -11,18 +11,18 @@ ul {
   list-style-type: none;
 }
 
-/* li.endpoint {
+li.endpoint {
   display: flex;
   align-items: center;
   text-align: center;
-} */
+}  */
 
 /* a {
   justify-content: center;
   align-items: center;
   border: solid;
   padding: 10px;
-} */
+}
 
 .App-logo {
   height: 40vmin;
@@ -48,4 +48,4 @@ ul {
 
 .App-link {
   color: #61dafb;
-}
+} */
