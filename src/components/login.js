@@ -4,6 +4,7 @@ import "../components/images/resizedController.png";
 const Login = () => {
   return (
     <div className="overall">
+      {/* <div className="brand-title">Cora?</div> */}
       <div className="bg-img"></div>
       <div className="container">
         {/* <div className="brand-logo"></div>
@@ -21,8 +22,10 @@ const Login = () => {
           </button>
         </div>
       </div>
-      <div className="brand-logo"></div>
-      <div className="brand-title">Cora?</div>
+      <div>
+        <div className="logo"></div>
+        <div className="brand-title">CoraTech</div>
+      </div>
     </div>
   );
 };
