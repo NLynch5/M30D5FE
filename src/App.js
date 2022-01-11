@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import React from "react";
 
 //Natalie added useState
@@ -9,7 +9,7 @@ import Login from "./components/login";
 import Signup from "./components/signup";
 // natalie added import below to calc
 import CalcForm from "./components/calculatorForm.js";
-import CreditTotal from "./components/creditTotal";
+// import CreditTotal from "./components/creditTotal";
 
 import "./App.css";
 import "./components/profile.css";
@@ -23,19 +23,6 @@ const App = () => {
     <Router>
       <div className="page">
         <div className="App">
-          {/* <nav>
-            <ul>
-              <li className="endpoint">
-                <Link to="/"></Link>
-              </li>
-              <li className="endpoint">
-                <Link id="link" to="/profile"></Link>
-              </li>
-              <li className="endpoint">
-                <Link to="/calculator">CALC </Link>
-              </li>
-            </ul>
-          </nav> */}
           <Switch>
             <Route path="/calculator">
               <Calculator />

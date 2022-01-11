@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap");
 /* @media only screen and (max-width: 1200px) { */
 
-.App {
+.overall {
   margin: 0;
   width: 100vw;
   height: 100vh;
   background: url("/src/components/images/resizedController.png") no-repeat,
     #605a56;
-  /* display: flex; */
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -18,7 +17,6 @@
 
 .overall {
   display: flex;
-  margin-top: 130px;
   flex-direction: row;
   align-items: center;
 }
@@ -59,20 +57,20 @@
 }
 
 .brand-title {
-  margin-left: 350px;
+  /* margin-left: 350px; */
   font-weight: 900;
   font-size: 1.8rem;
   color: #24f21d;
   letter-spacing: 1px;
 }
 
-.inputs {
+.l-inputs {
   text-align: left;
 }
 
-label,
-input,
-button {
+.l-label,
+.l-input,
+.l-button {
   /* display: grid; */
   width: 100%;
   padding: 0;
@@ -82,19 +80,19 @@ button {
   opacity: 1;
 }
 
-label {
+.l-label {
   margin-bottom: 6px;
 }
 
-label:nth-of-type(2) {
+.l-label:nth-of-type(2) {
   margin-top: 15px;
 }
 
-input::placeholder {
+.l-input::placeholder {
   color: gray;
 }
 
-input {
+.l-input {
   background: #ecf0f3;
   padding: 10px;
   padding-left: 20px;
@@ -104,7 +102,7 @@ input {
   box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
 }
 
-button {
+.l-button {
   margin-top: 20px;
   background: #fd5411d8;
   height: 40px;
@@ -115,7 +113,7 @@ button {
   transition: 0.5s;
 }
 
-.signupButton {
+.signup.l-Button {
   margin-top: 20px;
   background: #fd5411d8;
   height: 40px;
@@ -126,7 +124,7 @@ button {
   transition: 0.5s;
 }
 
-button:hover {
+.l-button:hover {
   box-shadow: none;
 }
 
