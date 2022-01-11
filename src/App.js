@@ -7,7 +7,8 @@ import Signup from "./components/signup";
 
 import "./App.css";
 import "./components/profile.css";
-import "./components/login.css";
+
+
 
 const App = () => {
   return (
@@ -16,15 +17,15 @@ const App = () => {
         <nav>
           <ul>
             <li className="endpoint">
-              <Link to="/">Login</Link>
+              <Link to="/"></Link>
             </li>
             <li className="endpoint">
               <Link id="link" to="/profile">
-                Profile
+
               </Link>
             </li>
             <li className="endpoint">
-              <Link to="/calculator">Carbon Calculator</Link>
+              <Link to="/calculator"></Link>
             </li>
           </ul>
         </nav>
