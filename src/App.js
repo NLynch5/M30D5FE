@@ -12,36 +12,36 @@ import "./components/login.css";
 const App = () => {
   return (
     <Router>
-      <div className="App">
-        <nav>
-          <ul>
-            <li className="endpoint">
-              <Link to="/">Login</Link>
-            </li>
-            <li className="endpoint">
-              <Link id="link" to="/profile">
-                Profile
-              </Link>
-            </li>
-            <li className="endpoint">
-              <Link to="/calculator">Carbon Calculator</Link>
-            </li>
-          </ul>
-        </nav>
-        <Switch>
-          <Route path="/calculator">
-            <Calculator />
-          </Route>
-          <Route path="/signup">
-            <Signup />
-          </Route>
-          <Route path="/profile">
-            <Profile />
-          </Route>
-          <Route path="/">
-            <Login />
-          </Route>
-        </Switch>
+      <div className="page">
+        <div className="App">
+          <nav>
+            <ul>
+              <li className="endpoint">
+                <Link to="/"></Link>
+              </li>
+              <li className="endpoint">
+                <Link id="link" to="/profile"></Link>
+              </li>
+              <li className="endpoint">
+                <Link to="/calculator"> </Link>
+              </li>
+            </ul>
+          </nav>
+          <Switch>
+            <Route path="/calculator">
+              <Calculator />
+            </Route>
+            <Route path="/signup">
+              <Signup />
+            </Route>
+            <Route path="/profile">
+              <Profile />
+            </Route>
+            <Route path="/">
+              <Login />
+            </Route>
+          </Switch>
+        </div>
       </div>
     </Router>
   );
