@@ -13,6 +13,7 @@ import "./components/profile.css";
 const App = () => {
   return (
     <Router>
+<<<<<<< HEAD
       <div className="App">
         <nav>
           <ul>
@@ -43,6 +44,38 @@ const App = () => {
             <Login />
           </Route>
         </Switch>
+=======
+      <div className="page">
+        <div className="App">
+          <nav>
+            <ul>
+              <li className="endpoint">
+                <Link to="/"></Link>
+              </li>
+              <li className="endpoint">
+                <Link id="link" to="/profile"></Link>
+              </li>
+              <li className="endpoint">
+                <Link to="/calculator"> </Link>
+              </li>
+            </ul>
+          </nav>
+          <Switch>
+            <Route path="/calculator">
+              <Calculator />
+            </Route>
+            <Route path="/signup">
+              <Signup />
+            </Route>
+            <Route path="/profile">
+              <Profile />
+            </Route>
+            <Route path="/">
+              <Login />
+            </Route>
+          </Switch>
+        </div>
+>>>>>>> 7681eedf6f323dd65c3716d7f8ba9a25394572cf
       </div>
     </Router>
   );
