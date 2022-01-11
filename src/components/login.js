@@ -22,7 +22,7 @@ const Login = () => {
           </button>
         </div>
       </div>
-      <div>
+      <div className="logo-brand">
         <div className="logo"></div>
         <div className="brand-title">CoraTech</div>
       </div>

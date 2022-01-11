@@ -14,7 +14,7 @@ const App = () => {
     <Router>
       <div className="page">
         <div className="App">
-          <nav>
+          {/* <nav>
             <ul>
               <li className="endpoint">
                 <Link to="/"></Link>
@@ -26,7 +26,7 @@ const App = () => {
                 <Link to="/calculator"> </Link>
               </li>
             </ul>
-          </nav>
+          </nav> */}
           <Switch>
             <Route path="/calculator">
               <Calculator />

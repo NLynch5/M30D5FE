@@ -18,6 +18,7 @@
 
 .overall {
   display: flex;
+  margin-top: 130px;
   flex-direction: row;
   align-items: center;
 }
@@ -50,7 +51,7 @@
   width: 450px;
   background: no-repeat, url("/src/components/images/logo.png");
   /* margin-top: 100px; */
-  margin-left: 400px;
+  margin-left: 350px;
 
   /* border-radius: 50%; */
   /* box-sizing: border-box; */
@@ -58,7 +59,7 @@
 }
 
 .brand-title {
-  margin-left: 400px;
+  margin-left: 350px;
   font-weight: 900;
   font-size: 1.8rem;
   color: #24f21d;
