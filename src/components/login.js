@@ -7,8 +7,8 @@ const Login = () => {
     <div className="overall">
       <div className="bg-img"></div>
       <div className="container">
-        {/* <div className="brand-logo"></div>
-        <div className="brand-title">Cora?</div> */}
+        <div className="brand-logo"></div>
+        <div className="brand-title">Cora?</div>
         <div className="inputs">
           <label>EMAIL</label>
           <input type="email" placeholder="example@email.com" />
