@@ -4,13 +4,13 @@ const Signup = () => {
   return <div className="s-container">
     <div className="s-inputs">
       <label>USERNAME :</label>
-      <input type="UserName" placeholder="Username12" />
+      <input className="s-input" type="UserName" placeholder="Username12" />
       <label>EMAIL :</label>
-      <input type="email" placeholder="example@email.com" />
+      <input className="s-input" type="email" placeholder="example@email.com" />
       <label>PASSWORD :</label>
-      <input type="password" placeholder="Min 8 charaters long" />
+      <input className="s-input" type="password" placeholder="Min 8 charaters long" />
 
-      <button className="signup" type="submit">Signup</button>
+      <button className="s-button" type="submit">Signup</button>
     </div>
   </div>
 };

@@ -32,17 +32,16 @@ body {
   padding: 40px;
   box-sizing: border-box;
   background: #413d39;
-  /* box-shadow: 14px 14px 20px #4ce231, -14px -14px 20px #4ce231; */
 }
 
-.inputs {
+.s-inputs {
   text-align: left;
   margin-top: 30px;
 }
 
 .s-label,
-input,
-button {
+.s-input,
+.s-button {
   display: block;
   width: 100%;
   padding: 0;
@@ -60,11 +59,11 @@ button {
   margin-top: 12px;
 }
 
-input::placeholder {
+.s-input::placeholder {
   color: gray;
 }
 
-input {
+.s-input {
   background: #ecf0f3;
   padding: 10px;
   padding-left: 20px;
@@ -74,7 +73,7 @@ input {
   box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
 }
 
-.signup {
+.s-button {
   margin-top: 20px;
   background: #0d660ad8;
   height: 40px;
@@ -84,7 +83,7 @@ input {
   transition: 0.5s;
 }
 
-button:hover {
+.s-button:hover {
   box-shadow: none;
 }
 

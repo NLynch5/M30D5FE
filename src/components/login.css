@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap");
 /* @media only screen and (max-width: 1200px) { */
 
-.App {
+.overall {
   margin: 0;
   width: 100vw;
   height: 100vh;
   background: url("/src/components/images/resizedController.png") no-repeat,
     #605a56;
-  /* display: flex; */
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -18,44 +17,31 @@
 
 .overall {
   display: flex;
-  margin-top: 130px;
   flex-direction: row;
   align-items: center;
 }
 
 .container {
-  display: flex;
+  display: block;
   position: relative;
   width: 570px;
   height: 380px;
-  /* align-items: center;
-  text-align: center;
-  justify-content: center; */
   place-items: center;
-  /* margin-bottom: 30px; */
   margin-top: 150px;
   border-radius: 20px;
   padding: 40px;
   box-sizing: border-box;
   background: grey;
   margin-left: 300px;
-  /* box-shadow: 14px 14px 20px #4ce231, -14px -14px 20px #4ce231; */
 }
 
 .logo {
   display: flex;
   position: relative;
-  /* display: block; */
-  /* padding-bottom: 200px; */
   height: 450px;
   width: 450px;
   background: no-repeat, url("/src/components/images/logo.png");
-  /* margin-top: 100px; */
   margin-left: 350px;
-
-  /* border-radius: 50%; */
-  /* box-sizing: border-box; */
-  /* box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white; */
 }
 
 .brand-title {
@@ -66,14 +52,13 @@
   letter-spacing: 1px;
 }
 
-.inputs {
+.l-inputs {
   text-align: left;
 }
 
-label,
-input,
-button {
-  /* display: grid; */
+.l-label,
+.l-input,
+.l-button {
   width: 100%;
   padding: 0;
   border: none;
@@ -82,19 +67,19 @@ button {
   opacity: 1;
 }
 
-label {
+.l-label {
   margin-bottom: 6px;
 }
 
-label:nth-of-type(2) {
+.l-label:nth-of-type(2) {
   margin-top: 15px;
 }
 
-input::placeholder {
+.l-input::placeholder {
   color: gray;
 }
 
-input {
+.l-input {
   background: #ecf0f3;
   padding: 10px;
   padding-left: 20px;
@@ -104,14 +89,13 @@ input {
   box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
 }
 
-button {
+.l-button {
   margin-top: 20px;
   background: #fd5411d8;
   height: 40px;
   border-radius: 20px;
   cursor: pointer;
   font-weight: 900;
-  /* box-shadow: 6px 6px 6px #9e360dec, -6px -6px 6px #9e360dec; */
   transition: 0.5s;
 }
 
@@ -122,7 +106,6 @@ button {
   border-radius: 20px;
   cursor: pointer;
   font-weight: 900;
-  /* box-shadow: 6px 6px 6px #9e360dec, -6px -6px 6px #9e360dec; */
   transition: 0.5s;
 }
 
@@ -130,21 +113,8 @@ button:hover {
   box-shadow: none;
 }
 
-/* a {
-  position: absolute;
-  font-size: 8px;
-  bottom: 4px;
-  right: 4px;
-  text-decoration: none;
-  color: black;
-  background: yellow;
-  border-radius: 10px;
-  padding: 2px;
-} */
-
 h1 {
   position: absolute;
   top: 0;
   left: 0;
 }
-/* } */
