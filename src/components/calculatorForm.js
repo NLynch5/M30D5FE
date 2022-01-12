@@ -1,59 +1,70 @@
-import React from "react";
+import React, { useState } from "react";
 import "../components/calculatorForm.css";
 
-//car calc form
-class CalcForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { value: " " };
+function CalcForm() {
+  const [credit, setCredit] = useState(0);
+  const [transport, setTransport] = useState();
+  const [distance, setDistance] = useState();
 
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
+  const handleChange = (e) => {
+    if (e.target.name === "transportSelect") {
+      setTransport(e.target.value);
+    } else if (e.target.name === "distance") {
+      setDistance(e.target.value);
+    }
+  };
 
-  handleChange(event) {
-    this.setState({ value: event.target.value });
-  }
-
-  handleSubmit(event) {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (transport === "Car") {
+      setCredit(distance * 50);
+    } else if (transport === "Train") {
+      setCredit(distance * 100);
+    } else if (transport === "Plane") {
+      setCredit(distance * 200);
+    }
     alert("This has been submitted");
-    event.preventDefault();
-  }
+    console.log(credit);
+  };
 
-  render() {
-    return (
-      <div className="calcContainer">
-        <form onSubmit={this.handleSubmit}>
-          <label>
-            Select your mode of transport:
-            <select value={this.state.value} onChange={this.handleChange}>
-              <option value="Car">Car</option>
-              <option value="Train">Train</option>
-              <option value="Plane">Plane</option>
-            </select>
-          </label>
-          <label>
-            <input
-              type="text"
-              name="Distance"
-              value={this.state.value}
-              onChange={this.handleChange}
-            />
-          </label>
-          <label>
-            Distance (miles):
-            <input type="text" name="Distance" />
-          </label>
-          <input type="submit" value="Submit" />
-        </form>
-      </div>
-    );
-  }
+  return (
+    <div className="calcContainer">
+      <form>
+        <label>
+          Select your mode of transport:
+          <select name="transportSelect" onChange={handleChange}>
+            <option />
+            <option value="Car">Car</option>
+            <option value="Train">Train</option>
+            <option value="Plane">Plane</option>
+          </select>
+        </label>
+        <label>
+          <input
+            type="text"
+            name="transportSelect"
+            value={transport}
+            disabled
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          Distance (miles):
+          <input
+            type="number"
+            name="distance"
+            value={distance}
+            onChange={handleChange}
+          />
+        </label>
+        <button type="submit" value="submit" onClick={handleSubmit}>
+          Submit
+        </button>
+        Total Credits:
+        <p>{credit}</p>
+      </form>
+    </div>
+  );
 }
-
-// ReactDOM.render;
-// {
-//   (<CalcForm />), document.getElementById("root");
-// }
 
 export default CalcForm;

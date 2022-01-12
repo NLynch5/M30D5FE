@@ -1,15 +1,13 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import React from "react";
-
-//Natalie added useState
-//import React, { useState } from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import Profile from "./components/profile";
 import Login from "./components/login";
 import Signup from "./components/signup";
 // natalie added import below to calc
 import CalcForm from "./components/calculatorForm.js";
-// import CreditTotal from "./components/creditTotal";
+//import transportTotal from "./components/calculatorForm";
 
 import "./App.css";
 import "./components/profile.css";
@@ -48,8 +46,18 @@ const Calculator = () => {
   return (
     <div className="calcContainer">
       <nav className="calcNavBar">
-        Logo <button className="profileBtn"> My Profile </button>
-        <button className="logoutBtn"> Log Out</button>
+        Logo
+        <button className="profileBtn">
+          <Link id="link" to="/profile">
+            My Profile
+          </Link>
+        </button>
+        <button className="logoutBtn">
+          <Link id="link" to="/">
+            {/* Have a look!*/}
+            Log out
+          </Link>
+        </button>
       </nav>
       <header className="calcHeader">
         <h2>Carbon Footprint Calculator</h2>
@@ -57,10 +65,6 @@ const Calculator = () => {
       <div className="calcForm">
         <CalcForm />
       </div>
-      <label>
-        Total Credits
-        <button className="calcTotal">{/* <CreditTotal /> */}</button>
-      </label>
       <footer className="calcFooter">
         Please go to the 'Your Profile' page to see how you can use your credits
         at your next gaming event.
