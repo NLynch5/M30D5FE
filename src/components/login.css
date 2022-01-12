@@ -5,6 +5,7 @@
   margin: 0;
   width: 100vw;
   height: 100vh;
+  font-family: poppins;
   background: url("/src/components/images/resizedController.png") no-repeat,
     #605a56;
   align-items: center;
@@ -12,7 +13,6 @@
   justify-content: center;
   place-items: center;
   overflow: hidden;
-  font-family: poppins;
 }
 
 .overall {
@@ -22,7 +22,7 @@
 }
 
 .container {
-  display: flex;
+  display: block;
   position: relative;
   width: 570px;
   height: 380px;
@@ -31,7 +31,7 @@
   justify-content: center; */
   place-items: center;
   /* margin-bottom: 30px; */
-  margin-top: 150px;
+  margin-top: 100px;
   border-radius: 20px;
   padding: 40px;
   box-sizing: border-box;
@@ -57,9 +57,10 @@
 }
 
 .brand-title {
-  /* margin-left: 350px; */
+  margin-left: 350px;
   font-weight: 900;
   font-size: 1.8rem;
+  -webkit-text-stroke: 2px black;
   color: #24f21d;
   letter-spacing: 1px;
 }
@@ -71,7 +72,6 @@
 .l-label,
 .l-input,
 .l-button {
-  /* display: grid; */
   width: 100%;
   padding: 0;
   border: none;
@@ -81,6 +81,8 @@
 }
 
 .l-label {
+  display: flex;
+  flex-direction: left;
   margin-bottom: 6px;
 }
 
