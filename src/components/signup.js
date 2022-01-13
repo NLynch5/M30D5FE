@@ -10,8 +10,7 @@ const Signup = ({ setUser }) => {
 
   const submitHandler = async (e) => {
     e.preventDefault();
-    const returnValue = await SignUpFetch(username, email, password);
-    setUser(returnValue.user.username)
+    await SignUpFetch(username, email, password, setUser);
   }
 
   return <div className="s-overall">

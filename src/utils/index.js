@@ -7,6 +7,7 @@ const SignUpFetch = async (username, email, password, setUser) => {
                 username,
                 email,
                 password,
+
             }),
         });
         const data = await response.json();
