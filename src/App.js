@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -15,17 +16,20 @@ import "./components/login.css";
 import "./components/calculatorForm.css";
 import "./components/calculatorForm.js";
 
+
 const App = () => {
+  const [user, setUser] = useState();
   return (
     <Router>
       <div className="page">
         <div className="App">
+          {user && <Redirect to="/calculator" />}
           <Switch>
             <Route path="/calculator">
               <Calculator />
             </Route>
             <Route path="/signup">
-              <Signup />
+              <Signup setUser={setUser} />
             </Route>
             <Route path="/profile">
               <Profile />
@@ -36,7 +40,7 @@ const App = () => {
           </Switch>
         </div>
       </div>
-    </Router>
+    </Router >
   );
 };
 
@@ -72,8 +76,5 @@ const Calculator = () => {
   );
 };
 
-// const Profile = () => {
-//   return <h2>Profile</h2>;
-// };
 
 export default App;
