@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import "../components/calculatorForm.css";
+import "./images/qr.png";
 
 function CalcForm() {
   const [credit, setCredit] = useState(0);
   const [transport, setTransport] = useState();
   const [distance, setDistance] = useState();
+  //const [qrcode, setQrcode] = useState();
 
   const handleChange = (e) => {
     if (e.target.name === "transportSelect") {
@@ -23,8 +25,8 @@ function CalcForm() {
     } else if (transport === "Plane") {
       setCredit(distance * 200);
     }
-    alert("This has been submitted");
-    console.log(credit);
+    // alert("This has been submitted");
+    // console.log(credit);
   };
 
   return (
@@ -73,6 +75,7 @@ function CalcForm() {
           {credit}
         </p>
       </form>
+      <section className="qrcodeContainer"></section>
     </div>
   );
 }

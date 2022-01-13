@@ -45,7 +45,7 @@ const Calculator = () => {
   return (
     <div className="calcContainer">
       <nav className="calcNavBar">
-        <div className="calcLogo"> insert logo</div>
+        <div className="calcLogo"> CORATECH </div>
         <button className="profileBtn">
           <Link id="link" to="/profile">
             My Profile
