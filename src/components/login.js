@@ -34,6 +34,7 @@ const Login = () => {
       <div>
         <div className="logo"></div>
         <div className="brand-title">CoraTech</div>
+        <div className="event"></div>
       </div>
     </div>
   );
