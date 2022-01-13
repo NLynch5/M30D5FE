@@ -92,3 +92,13 @@ button {
   font-size: 30px;
   color: midnightblue;
 }
+
+.qrcodeContainer {
+  display: flex;
+  align-content: center;
+  margin: 50px;
+  padding: 50px;
+  background: url("/src/components/images/qr.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
