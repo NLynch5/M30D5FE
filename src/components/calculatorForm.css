@@ -1,36 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap");
+
 body {
   margin: 0px;
   background-color: #605a56;
 }
 .calcContainer {
-  margin: 5vh;
-  padding: 3vh;
-  background-color: blue;
+  margin: 0.1vh;
+  padding: 2vh;
+  background-color: #605a56;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: space-between;
+  row-gap: 10px;
 }
 .calcNavBar {
-  background-color: blueviolet;
+  background-color: #373331;
   margin: 0.5vh;
   padding: 4vh;
   display: flex;
+  justify-content: flex-end;
 }
+
 button {
   border: none;
-  background-color: green;
-  font-size: 24px;
-  color: white;
-  font-weight: bold;
+  background-color: #80ac7b;
+  font-size: 15px;
+  color: black;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 20px;
   outline: none;
+  font-family: poppins;
+  padding: 12px;
+  box-sizing: border-box;
 }
 .calcHeader {
-  background-color: red;
-  margin: 1vh;
-  padding: 2vh;
+  background-color: #605a56;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  color: white;
+  font-size: 3vh;
+  font-family: poppins;
 }
+
 .calcForm {
-  background-color: saddlebrown;
+  margin: 1vh;
+  padding: 3vh;
+  background-color: #605a56;
+  color: black;
+  font-family: poppins;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+  border-style: double;
 }
-.calcTotal {
-  background-color: slateblue;
+.calcInput {
+  background-color: transparent;
+  margin: 0px;
+  padding: 1px;
+}
+.calcFooter {
+  font-family: poppins;
+  font-size: 15px;
+  text-align: center;
+  color: black;
+  font-style: italic;
+}
+.profileBtn,
+.logoutBtn {
+  border: none;
+  background-color: #80ac7b;
+  font-size: 15px;
+  color: black;
+  cursor: pointer;
+  border-radius: 20px;
+  outline: none;
+  font-family: poppins;
+  padding: 12px;
+  box-sizing: border-box;
+  display: flex;
+}
+.inputBox {
+  background-color: white;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.total {
+  margin: 5px;
+  font-size: 30px;
+  color: midnightblue;
 }
