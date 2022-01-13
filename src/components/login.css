@@ -46,7 +46,7 @@
   position: relative;
   border-style: solid;
   border-color: grey;
-  height: 450px;
+  height: 320px;
   width: 900px;
   background: no-repeat, url("/src/components/images/event.png");
   margin-top: 10px;
