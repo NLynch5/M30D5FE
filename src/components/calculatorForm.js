@@ -29,9 +29,9 @@ function CalcForm() {
 
   return (
     <div className="calcContainer">
-      <form>
-        <label>
-          Select your mode of transport:
+      <form className="calcForm">
+        <label className="calcInput">
+          Select your mode of transport :
           <select name="transportSelect" onChange={handleChange}>
             <option />
             <option value="Car">Car</option>
@@ -39,8 +39,9 @@ function CalcForm() {
             <option value="Plane">Plane</option>
           </select>
         </label>
-        <label>
+        <label className="calcInput">
           <input
+            className="inputBox"
             type="text"
             name="transportSelect"
             value={transport}
@@ -48,20 +49,29 @@ function CalcForm() {
             onChange={handleChange}
           />
         </label>
-        <label>
-          Distance (miles):
+        <label className="calcInput">
+          Distance (miles) :
           <input
+            className="inputBox"
             type="number"
             name="distance"
             value={distance}
             onChange={handleChange}
           />
         </label>
-        <button type="submit" value="submit" onClick={handleSubmit}>
+        <button
+          className="calcInput"
+          className="button"
+          type="submit"
+          value="submit"
+          onClick={handleSubmit}
+        >
           Submit
         </button>
-        Total Credits:
-        <p>{credit}</p>
+        <label className="calcInput">Your Total Credits:</label>
+        <p className="calcInput" className="total">
+          {credit}
+        </p>
       </form>
     </div>
   );

@@ -7,7 +7,6 @@ import Login from "./components/login";
 import Signup from "./components/signup";
 // natalie added import below to calc
 import CalcForm from "./components/calculatorForm.js";
-//import transportTotal from "./components/calculatorForm";
 
 import "./App.css";
 import "./components/profile.css";
@@ -46,7 +45,7 @@ const Calculator = () => {
   return (
     <div className="calcContainer">
       <nav className="calcNavBar">
-        Logo
+        <div className="calcLogo"> insert logo</div>
         <button className="profileBtn">
           <Link id="link" to="/profile">
             My Profile
@@ -62,12 +61,12 @@ const Calculator = () => {
       <header className="calcHeader">
         <h2>Carbon Footprint Calculator</h2>
       </header>
-      <div className="calcForm">
+      <div>
         <CalcForm />
       </div>
       <footer className="calcFooter">
-        Please go to the 'Your Profile' page to see how you can use your credits
-        at your next gaming event.
+        Click on the 'My Profile' page to see how you can use your credits at
+        your next gaming event.
       </footer>
     </div>
   );
