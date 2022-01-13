@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import "../components/images/resizedController.png";
+import "../components/images/logo.png";
+import "../components/images/images.jpg";
 
 const Login = () => {
   return (
@@ -29,8 +31,11 @@ const Login = () => {
           </button>
         </div>
       </div>
-      <div className="logo"></div>
-      <div className="brand-title">Cora?</div>
+      <div>
+        <div className="logo"></div>
+        <div className="brand-title">CoraTech</div>
+        <div className="event"></div>
+      </div>
     </div>
   );
 };
