@@ -14,16 +14,28 @@ body {
   row-gap: 10px;
 }
 .calcNavBar {
+  align-items: center;
+  text-align: center;
   background-color: #373331;
   margin: 0.5vh;
   padding: 4vh;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
-
+.calcLogo {
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  margin-right: 210px;
+  font-weight: 900;
+  font-size: 2.8rem;
+  -webkit-text-stroke: 3px black;
+  color: #24f21d;
+  letter-spacing: 5px;
+}
 button {
   border: none;
-  background-color: #80ac7b;
+  background-color: #fd5411d8;
   font-size: 15px;
   color: black;
   cursor: pointer;
@@ -71,7 +83,7 @@ button {
 .profileBtn,
 .logoutBtn {
   border: none;
-  background-color: #80ac7b;
+  background-color: #fd5411d8;
   font-size: 15px;
   color: black;
   cursor: pointer;

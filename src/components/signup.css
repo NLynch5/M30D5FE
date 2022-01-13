@@ -10,11 +10,11 @@ ul {
 
 .s-overall {
   margin: 0;
-  width: 100vw;
+  width: 130vw;
   height: 100vh;
-  background: url("/src/components/images/images.jpg") no-repeat, #605a56;
+  background-color: #605a56;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   text-align: center;
   justify-content: center;
   place-items: center;
@@ -24,18 +24,23 @@ ul {
 
 .s-container {
   position: relative;
-  width: 450px;
-  height: 400px;
+  width: 600px;
+  height: 700px;
   margin-bottom: 30px;
-  margin-right: 950px;
+  margin-right: 250px;
   border-radius: 20px;
-  padding: 40px;
+  padding: 20px;
+  padding-left: 30px;
   box-sizing: border-box;
   background: #413d39;
+  background-image: url("/src/components/images/logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+
   /* box-shadow: 14px 14px 20px #4ce231, -14px -14px 20px #4ce231; */
 }
 
-.s-.s-input {
+.-s.s-input {
   text-align: left;
   margin-top: 30px;
 }
@@ -52,6 +57,7 @@ ul {
 }
 
 .s-label {
+  margin-top: 10px;
   margin-bottom: 4px;
   text-align: left;
 }
@@ -68,6 +74,7 @@ ul {
   background: #ecf0f3;
   padding: 10px;
   padding-left: 20px;
+  margin-bottom: 20px;
   height: 50px;
   font-size: 14px;
   border-radius: 50px;
@@ -75,10 +82,11 @@ ul {
 }
 
 .s-button {
-  margin-top: 20px;
-  background: #0d660ad8;
+  margin-top: 310px;
+  background: #fd5411d8;
   height: 40px;
   border-radius: 20px;
+  /* margin-top: 320px; */
   cursor: pointer;
   font-weight: 900;
   transition: 0.5s;
@@ -92,4 +100,14 @@ h1 {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: end;
+  margin-right: 200px;
+  padding-left: 50px;
+  height: 1000px;
+  width: 600px;
+  background-color: #fd5411d8;
 }

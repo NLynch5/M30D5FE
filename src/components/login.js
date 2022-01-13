@@ -33,7 +33,7 @@ const Login = () => {
       </div>
       <div>
         <div className="logo"></div>
-        <div className="brand-title">CoraTech</div>
+        <div className="brand-title">CORATECH</div>
         <div className="event"></div>
       </div>
     </div>
