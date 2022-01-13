@@ -14,7 +14,7 @@ body {
   row-gap: 10px;
 }
 .calcNavBar {
-  background-color: aqua;
+  background-color: #373331;
   margin: 0.5vh;
   padding: 4vh;
   display: flex;
@@ -67,7 +67,6 @@ button {
   text-align: center;
   color: black;
   font-style: italic;
-  font-weight: bold;
 }
 .profileBtn,
 .logoutBtn {
